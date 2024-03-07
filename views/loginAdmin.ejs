@@ -1,0 +1,17 @@
+<h1>Admin Login Portal</h1>
+<% if (messages.error) { %>
+<p><%= messages.error %></p>
+<% } %>
+<form action="/admin" method="post">
+  <label for="username">Email Address</label>
+  <br />
+  <input type="email" name="email" placeholder="email" />
+  <br /><br />
+  <label for="password">Password</label>
+  <br />
+  <input type="password" name="password" placeholder="password" />
+  <br />
+  <input type="submit" value="Login" />
+  <br />
+  <a href="/">Back to user login page</a>
+</form>

@@ -1,0 +1,30 @@
+Hi admin <%= name %>
+<br />
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.forEach(user => { %>
+    <tr>
+      <td><%= user.firstname %></td>
+      <td><%= user.lastname %></td>
+      <td><%= user.email %></td>
+      <td><%= user.role %></td>
+      <td>
+        <a href="/admin/edit/<%= user.id %>">Edit</a>
+        <a href="/admin/delete/<%= user.id %>">Delete</a>
+      </td>
+    </tr>
+
+    <% }); %>
+  </tbody>
+</table>
+<a href="/admin/addUser">Add new user?</a>
+<a href="/logout">Logout</a>

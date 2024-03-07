@@ -1,0 +1,24 @@
+<h1><%= message%></h1>
+<form action="/addUser" method="post">
+  <label for="FirstName">First Name</label>
+  <br />
+  <input type="text" name="firstName" placeholder="FirstName" required />
+  <br /><br />
+
+  <label for="LastName">Last Name</label>
+  <br />
+  <input type="text" name="lastName" placeholder="LastName" required />
+  <br /><br />
+
+  <label for="username">Email Address</label>
+  <br />
+  <input type="email" name="email" placeholder="Email Address" required />
+  <br /><br />
+
+  <label for="password">Password</label>
+  <br />
+  <input type="password" name="password" placeholder="password" required />
+  <br />
+  <input type="submit" value="<%= buttonMessage%>" />
+</form>
+<a href="/">Back to Login</a>
