@@ -1,3 +1,5 @@
+// function to connect to MongoDB Atlas
+
 const mongoose = require('mongoose');
 
 async function connectToDatabase(uri) {
@@ -6,8 +8,6 @@ async function connectToDatabase(uri) {
         console.log('Connected to MongoDB Atlas');
     } catch (err) {
         console.error('Error connecting to MongoDB Atlas:', err);
-        // You might want to throw the error here to handle it elsewhere
-        throw err;
     }
 }
 

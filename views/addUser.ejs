@@ -1,5 +1,5 @@
 <h1><%= message%></h1>
-<form action="/addUser" method="post">
+<form action="<%= isAdmin ? '/admin/addUser' : '/addUser' %>" method="post">
   <label for="FirstName">First Name</label>
   <br />
   <input type="text" name="firstName" placeholder="FirstName" required />
@@ -18,7 +18,7 @@
   <label for="password">Password</label>
   <br />
   <input type="password" name="password" placeholder="password" required />
-  <br />
+  <br /><br />
   <input type="submit" value="<%= buttonMessage%>" />
 </form>
-<a href="/">Back to Login</a>
+<a href="/admin/dashboard">Back to dashboard</a>

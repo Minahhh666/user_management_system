@@ -1,5 +1,4 @@
-Hi admin <%= name %>
-<br />
+<h1>Hi <%= name %></h1>
 <table>
   <thead>
     <tr>
@@ -18,8 +17,8 @@ Hi admin <%= name %>
       <td><%= user.email %></td>
       <td><%= user.role %></td>
       <td>
-        <a href="/admin/edit/<%= user.id %>">Edit</a>
-        <a href="/admin/delete/<%= user.id %>">Delete</a>
+        <a href="/admin/editUser/<%= user.id %>">Edit</a>
+        <a href="/admin/deleteUser/<%= user.id %>">Delete</a>
       </td>
     </tr>
 
@@ -27,4 +26,5 @@ Hi admin <%= name %>
   </tbody>
 </table>
 <a href="/admin/addUser">Add new user?</a>
-<a href="/logout">Logout</a>
+<br />
+<a href="/admin/logout">Logout</a>

@@ -2,3 +2,9 @@ rate limiter
 ip check
 encryption
 helmet.js (x-frame-options,cross-site-scripting,xss,strict transport security)
+timestamp in db
+nginx
+testing
+load balancing
+db indexing
+put/delete idempotency

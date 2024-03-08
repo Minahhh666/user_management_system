@@ -1,0 +1,21 @@
+<h1>User Info</h1>
+<form action="<%= isAdmin ? '/admin/editUser/' + id : '/editUser/' + id %>" method="post">
+
+  <label for="FirstName">First Name</label>
+  <br />
+  <input type="text" name="firstName" value="<%= firstname%>" required />
+  <br /><br />
+
+  <label for="LastName">Last Name</label>
+  <br />
+  <input type="text" name="lastName" value="<%= lastname%>" required />
+  <br /><br />
+
+  <label for="username">Email Address</label>
+  <br />
+  <input type="email" name="email" placeholder="<%= email%>" readonly />
+  <br /><br />
+
+  <input type="submit" value="Update User" />
+</form>
+<a href="<%= isAdmin ? '/admin/dashboard' : '/user' %>">Back to <%= isAdmin ? 'dashboard' : 'profile' %></a>
