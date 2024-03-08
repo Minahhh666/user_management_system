@@ -8,7 +8,7 @@ const { checkAuthenticated, checkNotAuthenticated } = require('../src/checkAuthe
 
 // Configure Passport for authentication
 const Passport = require('passport');
-require('../passport-config')(Passport);
+require('../src/passport-config')(Passport);
 router.use(Passport.initialize());
 router.use(Passport.session());
 

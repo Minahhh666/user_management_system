@@ -1,6 +1,6 @@
 const LocalStrategy = require("passport-local").Strategy;
 const bcrypt = require('bcrypt')
-const userModel = require('./src/userModel');
+const userModel = require('./userModel');
 
 
 // Passport configuration function for local authentication strategy

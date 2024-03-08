@@ -6,7 +6,7 @@ const router = express.Router();
 const Passport = require('passport'); 
 const {checkAuthenticatedAdmin, checkNotAuthenticatedAdmin} = require('../src/checkAuthentication');
 
-require('../passport-config')(Passport); // Configure Passport
+require('../src/passport-config')(Passport); // Configure Passport
 router.use(Passport.initialize());
 router.use(Passport.session());
 
